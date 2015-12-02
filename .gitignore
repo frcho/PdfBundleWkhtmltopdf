@@ -1,0 +1,9 @@
+vendor/
+composer.lock
+coverage/
+Resources/html-doc
+/.project
+/nbproject/private/
+*.gitignore~
+*.md~
+*.json~
