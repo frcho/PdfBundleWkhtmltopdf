@@ -1,5 +1,5 @@
 {
-    "name": "kijho-technologies/pdf-bundle",
+    "name": "frcho/pdf-bundle",
     "type": "symfony-bundle",
     "description": "kijho-technologies PDF Bundle for Symfony2",
     "keywords": ["PDF"],
@@ -23,7 +23,7 @@
         "phpunit/phpunit": "3.7.*"
     },
     "autoload": {
-        "psr-0": { "kijho-technologies\\PdfBundle": "" }
+        "psr-0": { "frcho\\PdfBundle": "" }
     },
-    "target-dir": "kijho-technologies/PdfBundle"
+    "target-dir": "frcho/PdfBundle"
 }
