@@ -8,7 +8,7 @@ Add kijhoTechnologiesPdfBundle to composer.
 
     {
         "require": {
-            "kijho-technologies/pdf-bundle": "dev-master"
+            "frcho/pdf-bundle": "dev-master"
         }
     }
 
