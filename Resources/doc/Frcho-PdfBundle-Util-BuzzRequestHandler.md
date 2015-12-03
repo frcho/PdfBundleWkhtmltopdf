@@ -1,4 +1,4 @@
-KijhoTechnologies\PdfBundle\Util\BuzzRequestHandler
+Frcho\PdfBundle\Util\BuzzRequestHandler
 ===============
 
 The handler that we&#039;ll use to get external files from other servers.
@@ -7,8 +7,8 @@ The handler that we&#039;ll use to get external files from other servers.
 
 
 * Class name: BuzzRequestHandler
-* Namespace: KijhoTechnologies\PdfBundle\Util
-* This class implements: [KijhoTechnologies\PdfBundle\Util\RequestHandlerInterface](KijhoTechnologies-PdfBundle-Util-RequestHandlerInterface.md)
+* Namespace: Frcho\PdfBundle\Util
+* This class implements: [Frcho\PdfBundle\Util\RequestHandlerInterface](Frcho-PdfBundle-Util-RequestHandlerInterface.md)
 
 
 
@@ -63,7 +63,7 @@ Methods
 ### __construct
 
 ```
-mixed KijhoTechnologies\PdfBundle\Util\BuzzRequestHandler::__construct(\Buzz\Message\MessageInterface $request, \Buzz\Message\MessageInterface $response, \Buzz\Client\ClientInterface $client)
+mixed Frcho\PdfBundle\Util\BuzzRequestHandler::__construct(\Buzz\Message\MessageInterface $request, \Buzz\Message\MessageInterface $response, \Buzz\Client\ClientInterface $client)
 ```
 
 Initiate the Request handler with a Request, Response and Client
@@ -84,7 +84,7 @@ interface.
 ### getClient
 
 ```
-\Buzz\Message\MessageInterface KijhoTechnologies\PdfBundle\Util\BuzzRequestHandler::getClient()
+\Buzz\Message\MessageInterface Frcho\PdfBundle\Util\BuzzRequestHandler::getClient()
 ```
 
 Fetch the Client object we're using to do requests.
@@ -98,7 +98,7 @@ Fetch the Client object we're using to do requests.
 ### getContent
 
 ```
-string KijhoTechnologies\PdfBundle\Util\BuzzRequestHandler::getContent(string $url)
+string Frcho\PdfBundle\Util\BuzzRequestHandler::getContent(string $url)
 ```
 
 Retrieve the contents from a given url.
@@ -116,7 +116,7 @@ Retrieve the contents from a given url.
 ### getResponse
 
 ```
-\Buzz\Message\MessageInterface KijhoTechnologies\PdfBundle\Util\BuzzRequestHandler::getResponse()
+\Buzz\Message\MessageInterface Frcho\PdfBundle\Util\BuzzRequestHandler::getResponse()
 ```
 
 Fetch the Response object we're using to do requests.
@@ -130,7 +130,7 @@ Fetch the Response object we're using to do requests.
 ### getRequest
 
 ```
-\Buzz\Message\MessageInterface KijhoTechnologies\PdfBundle\Util\BuzzRequestHandler::getRequest()
+\Buzz\Message\MessageInterface Frcho\PdfBundle\Util\BuzzRequestHandler::getRequest()
 ```
 
 Fetch the Request object we're using to do requests.

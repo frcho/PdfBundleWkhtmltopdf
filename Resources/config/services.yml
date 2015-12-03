@@ -1,7 +1,7 @@
 parameters:
-    siphoc_pdf.basepath: ~
-    siphoc_pdf.options: []
-    siphoc_pdf.binary: '/usr/local/bin/wkhtmltopdf'
+    frcho_pdf.basepath: ~
+    frcho_pdf.options: []
+    frcho_pdf.binary: '/usr/local/bin/wkhtmltopdf'
 
 services:
     buzz.request:
@@ -15,23 +15,23 @@ services:
 
     knp.snappy.pdf:
         class: Knp\Snappy\Pdf
-        arguments: [ %KijhoTechnologies_pdf.binary%, %KijhoTechnologies_pdf.options% ]
+        arguments: [ %frcho_pdf.binary%, %frcho_pdf.options% ]
 
-    siphoc.buzz_request_handler:
-        class: kijhoTechnologies\PdfBundle\Util\BuzzRequestHandler
+    frcho.buzz_request_handler:
+        class: Frcho\PdfBundle\Util\BuzzRequestHandler
         arguments: [ @buzz.request, @buzz.response, @buzz.client ]
 
-    siphoc.pdf.css_to_html:
-        class: kijhoTechnologies\PdfBundle\Converter\CssToHTML
-        arguments: [ @siphoc.buzz_request_handler ]
+    frcho.pdf.css_to_html:
+        class: Frcho\PdfBundle\Converter\CssToHTML
+        arguments: [ @frcho.buzz_request_handler ]
         calls:
-            - [ setBasePath, [ %KijhoTechnologies_pdf.basepath% ] ]
+            - [ setBasePath, [ %frcho_pdf.basepath% ] ]
 
-    siphoc.pdf.css_path_to_url:
-        class: kijhoTechnologies\PdfBundle\Converter\CssPathToUrl
+    frcho.pdf.css_path_to_url:
+        class: frcho\PdfBundle\Converter\CssPathToUrl
 
-    siphoc.pdf.js_to_html:
-        class: kijhoTechnologies\PdfBundle\Converter\JSToHTML
-        arguments: [ @KijhoTechnologies.buzz_request_handler ]
+    frcho.pdf.js_to_html:
+        class: Frcho\PdfBundle\Converter\JSToHTML
+        arguments: [ @frcho.buzz_request_handler ]
         calls:
-            - [ setBasePath, [ %KijhoTechnologies_pdf.basepath% ] ]
+            - [ setBasePath, [ %frcho_pdf.basepath% ] ]

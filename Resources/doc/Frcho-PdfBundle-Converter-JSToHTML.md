@@ -1,4 +1,4 @@
-KijhoTechnologies\PdfBundle\Converter\JSToHTML
+Frcho\PdfBundle\Converter\JSToHTML
 ===============
 
 Given a HTML page, take the external JS files and put it in the HTML with
@@ -8,8 +8,8 @@ Given a HTML page, take the external JS files and put it in the HTML with
 
 
 * Class name: JSToHTML
-* Namespace: KijhoTechnologies\PdfBundle\Converter
-* This class implements: [KijhoTechnologies\PdfBundle\Converter\ConverterInterface](KijhoTechnologies-PdfBundle-Converter-ConverterInterface.md)
+* Namespace: Frcho\PdfBundle\Converter
+* This class implements: [Frcho\PdfBundle\Converter\ConverterInterface](Frcho-PdfBundle-Converter-ConverterInterface.md)
 
 
 
@@ -34,7 +34,7 @@ The basepath for our JS files.
 ### $requestHandler
 
 ```
-protected \KijhoTechnologies\PdfBundle\Util\RequestHandlerInterface $requestHandler
+protected \Frcho\PdfBundle\Util\RequestHandlerInterface $requestHandler
 ```
 
 The request handler used for external calls.
@@ -51,7 +51,7 @@ Methods
 ### __construct
 
 ```
-mixed KijhoTechnologies\PdfBundle\Converter\JSToHTML::__construct(\KijhoTechnologies\PdfBundle\Util\RequestHandlerInterface $handler)
+mixed Frcho\PdfBundle\Converter\JSToHTML::__construct(\Frcho\PdfBundle\Util\RequestHandlerInterface $handler)
 ```
 
 Initiate the JSToHTML class with the request handler interface.
@@ -62,14 +62,14 @@ Initiate the JSToHTML class with the request handler interface.
 
 #### Arguments
 
-* $handler **[KijhoTechnologies\PdfBundle\Util\RequestHandlerInterface](KijhoTechnologies-PdfBundle-Util-RequestHandlerInterface.md)**
+* $handler **[Frcho\PdfBundle\Util\RequestHandlerInterface](Frcho-PdfBundle-Util-RequestHandlerInterface.md)**
 
 
 
 ### convertToString
 
 ```
-string KijhoTechnologies\PdfBundle\Converter\JSToHTML::convertToString(string $html)
+string Frcho\PdfBundle\Converter\JSToHTML::convertToString(string $html)
 ```
 
 Extract all the linked JS files and put them in the proper place on the
@@ -88,7 +88,7 @@ given HTML string.
 ### extractExternalJavaScript
 
 ```
-array KijhoTechnologies\PdfBundle\Converter\JSToHTML::extractExternalJavaScript(string $html)
+array Frcho\PdfBundle\Converter\JSToHTML::extractExternalJavaScript(string $html)
 ```
 
 Given a HTML string, find all the JS files that should be loaded.
@@ -106,7 +106,7 @@ Given a HTML string, find all the JS files that should be loaded.
 ### getBasePath
 
 ```
-string KijhoTechnologies\PdfBundle\Converter\JSToHTML::getBasePath()
+string Frcho\PdfBundle\Converter\JSToHTML::getBasePath()
 ```
 
 Retrieve the BasePath used for this inline action.
@@ -120,7 +120,7 @@ Retrieve the BasePath used for this inline action.
 ### getRequestHandler
 
 ```
-\KijhoTechnologies\PdfBundle\Util\RequestHandlerInterface KijhoTechnologies\PdfBundle\Converter\JSToHTML::getRequestHandler()
+\Frcho\PdfBundle\Util\RequestHandlerInterface Frcho\PdfBundle\Converter\JSToHTML::getRequestHandler()
 ```
 
 Retrieve the Request Handler used for external calls.
@@ -134,7 +134,7 @@ Retrieve the Request Handler used for external calls.
 ### setBasePath
 
 ```
-\KijhoTechnologies\PdfBundle\Converter\CssToInline KijhoTechnologies\PdfBundle\Converter\JSToHTML::setBasePath(string $basePath)
+\Frcho\PdfBundle\Converter\CssToInline Frcho\PdfBundle\Converter\JSToHTML::setBasePath(string $basePath)
 ```
 
 Set the base path we'll use to fetch our css files from.
@@ -152,7 +152,7 @@ Set the base path we'll use to fetch our css files from.
 ### createJavaScriptPaths
 
 ```
-array KijhoTechnologies\PdfBundle\Converter\JSToHTML::createJavaScriptPaths(array $javascripts)
+array Frcho\PdfBundle\Converter\JSToHTML::createJavaScriptPaths(array $javascripts)
 ```
 
 Check if a JavaScript file is a local or externalJavaScript file or.
@@ -172,7 +172,7 @@ fetch the data to insert.</p>
 ### getExternalJavaScriptRegex
 
 ```
-string KijhoTechnologies\PdfBundle\Converter\JSToHTML::getExternalJavaScriptRegex()
+string Frcho\PdfBundle\Converter\JSToHTML::getExternalJavaScriptRegex()
 ```
 
 This contains the regex we'll use to find the JS files in a given string.
@@ -186,7 +186,7 @@ This contains the regex we'll use to find the JS files in a given string.
 ### getJavaScriptContent
 
 ```
-string KijhoTechnologies\PdfBundle\Converter\JSToHTML::getJavaScriptContent(string $path)
+string Frcho\PdfBundle\Converter\JSToHTML::getJavaScriptContent(string $path)
 ```
 
 Fetch the content of a JavaScript file from a given path.
@@ -204,7 +204,7 @@ Fetch the content of a JavaScript file from a given path.
 ### isExternalJavaScriptFile
 
 ```
-boolean KijhoTechnologies\PdfBundle\Converter\JSToHTML::isExternalJavaScriptFile(string $url)
+boolean Frcho\PdfBundle\Converter\JSToHTML::isExternalJavaScriptFile(string $url)
 ```
 
 Check if the given string is a string for a local JavaScript file or an
@@ -223,7 +223,7 @@ external JavaScript.
 ### replaceJavaScriptTags
 
 ```
-string KijhoTechnologies\PdfBundle\Converter\JSToHTML::replaceJavaScriptTags(string $html, array $javaScriptFiles)
+string Frcho\PdfBundle\Converter\JSToHTML::replaceJavaScriptTags(string $html, array $javaScriptFiles)
 ```
 
 Replace the JavaScript tags that do external requests with inline

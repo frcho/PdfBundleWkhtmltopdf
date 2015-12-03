@@ -7,7 +7,7 @@
  * @link        http://siphoc.com
  */
 
-namespace kijhoTechnologies\PdfBundle\Converter;
+namespace Frcho\PdfBundle\Converter;
 
 /**
  * Abstract class that represents all the CSS Converters. Here we'll do some

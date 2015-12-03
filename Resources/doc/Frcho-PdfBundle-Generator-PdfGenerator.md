@@ -1,4 +1,4 @@
-KijhoTechnologies\PdfBundle\Generator\PdfGenerator
+Frcho\PdfBundle\Generator\PdfGenerator
 ===============
 
 The actual PDF Generator that&#039;ll transform a view into a proper PDF.
@@ -7,7 +7,7 @@ The actual PDF Generator that&#039;ll transform a view into a proper PDF.
 
 
 * Class name: PdfGenerator
-* Namespace: KijhoTechnologies\PdfBundle\Generator
+* Namespace: Frcho\PdfBundle\Generator
 * This class implements: Knp\Snappy\GeneratorInterface
 
 
@@ -33,7 +33,7 @@ The default filename we'll use for the downloadable file.
 ### $cssToHTML
 
 ```
-protected \KijhoTechnologies\PdfBundle\Generator\CssToInline $cssToHTML
+protected \Frcho\PdfBundle\Generator\CssToInline $cssToHTML
 ```
 
 The CssToHTML Converter.
@@ -46,7 +46,7 @@ The CssToHTML Converter.
 ### $jsToHTML
 
 ```
-protected \KijhoTechnologies\PdfBundle\Generator\JSToHTML $jsToHTML
+protected \Frcho\PdfBundle\Generator\JSToHTML $jsToHTML
 ```
 
 The JSToHTML Converter.
@@ -89,7 +89,7 @@ Methods
 ### __construct
 
 ```
-mixed KijhoTechnologies\PdfBundle\Generator\PdfGenerator::__construct(\KijhoTechnologies\PdfBundle\Converter\ConverterInterface $cssToHTML, \KijhoTechnologies\PdfBundle\Converter\ConverterInterface $jsToHTML, \Knp\Snappy\GeneratorInterface $generator, \Symfony\Component\Templating\EngineInterface $templateEngine, \Symfony\Component\HttpKernel\Log\LoggerInterface $logger)
+mixed Frcho\PdfBundle\Generator\PdfGenerator::__construct(\Frcho\PdfBundle\Converter\ConverterInterface $cssToHTML, \Frcho\PdfBundle\Converter\ConverterInterface $jsToHTML, \Knp\Snappy\GeneratorInterface $generator, \Symfony\Component\Templating\EngineInterface $templateEngine, \Symfony\Component\HttpKernel\Log\LoggerInterface $logger)
 ```
 
 Initiate the PDF Generator.
@@ -100,8 +100,8 @@ Initiate the PDF Generator.
 
 #### Arguments
 
-* $cssToHTML **[KijhoTechnologies\PdfBundle\Converter\ConverterInterface](KijhoTechnologies-PdfBundle-Converter-ConverterInterface.md)**
-* $jsToHTML **[KijhoTechnologies\PdfBundle\Converter\ConverterInterface](KijhoTechnologies-PdfBundle-Converter-ConverterInterface.md)**
+* $cssToHTML **[Frcho\PdfBundle\Converter\ConverterInterface](Frcho-PdfBundle-Converter-ConverterInterface.md)**
+* $jsToHTML **[Frcho\PdfBundle\Converter\ConverterInterface](Frcho-PdfBundle-Converter-ConverterInterface.md)**
 * $generator **Knp\Snappy\GeneratorInterface**
 * $templateEngine **Symfony\Component\Templating\EngineInterface**
 * $logger **Symfony\Component\HttpKernel\Log\LoggerInterface**
@@ -111,7 +111,7 @@ Initiate the PDF Generator.
 ### getCssConverter
 
 ```
-\KijhoTechnologies\PdfBundle\Generator\CssToHTML KijhoTechnologies\PdfBundle\Generator\PdfGenerator::getCssConverter()
+\Frcho\PdfBundle\Generator\CssToHTML Frcho\PdfBundle\Generator\PdfGenerator::getCssConverter()
 ```
 
 Get the CssToHTML Converter.
@@ -125,7 +125,7 @@ Get the CssToHTML Converter.
 ### getGenerator
 
 ```
-\Knp\Snappy\GeneratorInterface KijhoTechnologies\PdfBundle\Generator\PdfGenerator::getGenerator()
+\Knp\Snappy\GeneratorInterface Frcho\PdfBundle\Generator\PdfGenerator::getGenerator()
 ```
 
 Retrieve the generator we're using to convert our data to HTML.
@@ -139,7 +139,7 @@ Retrieve the generator we're using to convert our data to HTML.
 ### getTemplatingEngine
 
 ```
-\Symfony\Component\Templating\EngineInterface KijhoTechnologies\PdfBundle\Generator\PdfGenerator::getTemplatingEngine()
+\Symfony\Component\Templating\EngineInterface Frcho\PdfBundle\Generator\PdfGenerator::getTemplatingEngine()
 ```
 
 Retrieve the templating engine.
@@ -153,7 +153,7 @@ Retrieve the templating engine.
 ### getJSConverter
 
 ```
-\KijhoTechnologies\PdfBundle\Generator\JSToHTML KijhoTechnologies\PdfBundle\Generator\PdfGenerator::getJSConverter()
+\Frcho\PdfBundle\Generator\JSToHTML Frcho\PdfBundle\Generator\PdfGenerator::getJSConverter()
 ```
 
 Get the JSToHTML Converter.
@@ -167,7 +167,7 @@ Get the JSToHTML Converter.
 ### getLogger
 
 ```
-\Symfony\Component\HttpKernel\Log\LoggerInterface KijhoTechnologies\PdfBundle\Generator\PdfGenerator::getLogger()
+\Symfony\Component\HttpKernel\Log\LoggerInterface Frcho\PdfBundle\Generator\PdfGenerator::getLogger()
 ```
 
 Retrieve the logging instance.
@@ -181,7 +181,7 @@ Retrieve the logging instance.
 ### getName
 
 ```
-string KijhoTechnologies\PdfBundle\Generator\PdfGenerator::getName()
+string Frcho\PdfBundle\Generator\PdfGenerator::getName()
 ```
 
 Retrieve the name for this PDF file.
@@ -195,7 +195,7 @@ Retrieve the name for this PDF file.
 ### generate
 
 ```
-mixed KijhoTechnologies\PdfBundle\Generator\PdfGenerator::generate(string $input, string $output, array $options, bool $overwrite)
+mixed Frcho\PdfBundle\Generator\PdfGenerator::generate(string $input, string $output, array $options, bool $overwrite)
 ```
 
 Generates the output media file from the specified input HTML file
@@ -216,7 +216,7 @@ Generates the output media file from the specified input HTML file
 ### generateFromHtml
 
 ```
-mixed KijhoTechnologies\PdfBundle\Generator\PdfGenerator::generateFromHtml(string $html, string $output, array $options, bool $overwrite)
+mixed Frcho\PdfBundle\Generator\PdfGenerator::generateFromHtml(string $html, string $output, array $options, bool $overwrite)
 ```
 
 Generates the output media file from the given HTML
@@ -237,7 +237,7 @@ Generates the output media file from the given HTML
 ### getOutput
 
 ```
-string KijhoTechnologies\PdfBundle\Generator\PdfGenerator::getOutput(string $input, array $options)
+string Frcho\PdfBundle\Generator\PdfGenerator::getOutput(string $input, array $options)
 ```
 
 Returns the output of the media generated from the specified input HTML
@@ -257,7 +257,7 @@ file
 ### getOutputFromHtml
 
 ```
-string KijhoTechnologies\PdfBundle\Generator\PdfGenerator::getOutputFromHtml(string $html, array $options)
+string Frcho\PdfBundle\Generator\PdfGenerator::getOutputFromHtml(string $html, array $options)
 ```
 
 Generate the PDF from a given HTML string.
@@ -277,7 +277,7 @@ tags with inline blocks/code.</p>
 ### getOutputFromView
 
 ```
-string KijhoTechnologies\PdfBundle\Generator\PdfGenerator::getOutputFromView(string $view, array $parameters, array $options)
+string Frcho\PdfBundle\Generator\PdfGenerator::getOutputFromView(string $view, array $parameters, array $options)
 ```
 
 Retrieve the output from a Symfony view.
@@ -298,7 +298,7 @@ template engine and renders it trough that.</p>
 ### downloadFromView
 
 ```
-\Symfony\Component\HttpFoundation\Response KijhoTechnologies\PdfBundle\Generator\PdfGenerator::downloadFromView(string $view, array $parameters, array $options)
+\Symfony\Component\HttpFoundation\Response Frcho\PdfBundle\Generator\PdfGenerator::downloadFromView(string $view, array $parameters, array $options)
 ```
 
 From a given view and parameters, create the proper response so we can
@@ -319,7 +319,7 @@ easily download the file.
 ### setName
 
 ```
-\KijhoTechnologies\PdfBundle\Generator\PdfGenerator KijhoTechnologies\PdfBundle\Generator\PdfGenerator::setName(string $name)
+\Frcho\PdfBundle\Generator\PdfGenerator Frcho\PdfBundle\Generator\PdfGenerator::setName(string $name)
 ```
 
 Set the name we'll use for the PDF file.
@@ -337,7 +337,7 @@ Set the name we'll use for the PDF file.
 ### log
 
 ```
-mixed KijhoTechnologies\PdfBundle\Generator\PdfGenerator::log(string $message)
+mixed Frcho\PdfBundle\Generator\PdfGenerator::log(string $message)
 ```
 
 Log a message to the logging system.

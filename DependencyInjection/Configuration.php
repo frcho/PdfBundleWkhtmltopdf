@@ -1,6 +1,6 @@
 <?php
 
-namespace kijhoTechnologies\PdfBundle\DependencyInjection;
+namespace Frcho\PdfBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -27,7 +27,7 @@ class Configuration implements ConfigurationInterface
         };
 
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('kijhoTechnologies_pdf');
+        $rootNode = $treeBuilder->root('frcho_pdf');
 
         $rootNode->children()
             ->scalarNode('binary')->defaultValue('wkhtmltopdf')->end()

@@ -1,13 +1,13 @@
 <?php
 /**
- * KijhoTechnologies
+ * Frcho
  *
  * @author      Jelmer Snoeck <jelmer@siphoc.com>
- * @copyright   2013 KijhoTechnologies
+ * @copyright   2013 Frcho
  * @link        http://siphoc.com
  */
 
-namespace KijhoTechnologies\PdfBundle\Util;
+namespace Frcho\PdfBundle\Util;
 
 /**
  * Interface for a proper request handler. We'll integrate one call we'll use

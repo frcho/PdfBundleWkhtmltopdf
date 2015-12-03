@@ -7,7 +7,7 @@
  * @link        http://siphoc.com
  */
 
-namespace kijhoTechnologies\PdfBundle\Converter;
+namespace Frcho\PdfBundle\Converter;
 
 /**
  * The interface for our converters. This provides some basic structure for each

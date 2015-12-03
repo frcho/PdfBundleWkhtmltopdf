@@ -1,4 +1,4 @@
-KijhoTechnologies\PdfBundle\Util\RequestHandlerInterface
+Frcho\PdfBundle\Util\RequestHandlerInterface
 ===============
 
 Interface for a proper request handler.
@@ -8,7 +8,7 @@ trough our application.</p>
 
 
 * Interface name: RequestHandlerInterface
-* Namespace: KijhoTechnologies\PdfBundle\Util
+* Namespace: Frcho\PdfBundle\Util
 * This is an **interface**
 
 
@@ -23,7 +23,7 @@ Methods
 ### getContent
 
 ```
-string KijhoTechnologies\PdfBundle\Util\RequestHandlerInterface::getContent(string $url)
+string Frcho\PdfBundle\Util\RequestHandlerInterface::getContent(string $url)
 ```
 
 Retrieve the contents from a given url.

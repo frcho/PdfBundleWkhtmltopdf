@@ -1,15 +1,15 @@
 <?php
 /**
- * kijhoTechnologies
+ * Frcho
  *
  * @author      Jelmer Snoeck <jelmer@siphoc.com>
- * @copyright   2013 kijhoTechnologies
+ * @copyright   2013 Frcho
  * @link        http://siphoc.com
  */
 
-namespace kijhoTechnologies\PdfBundle\Converter;
+namespace Frcho\PdfBundle\Converter;
 
-use kijhoTechnologies\PdfBundle\Util\RequestHandlerInterface;
+use Frcho\PdfBundle\Util\RequestHandlerInterface;
 
 /**
  * Given a HTML page, take the external JS files and put it in the HTML with

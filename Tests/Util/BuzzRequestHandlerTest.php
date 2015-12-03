@@ -1,8 +1,8 @@
 <?php
 
-namespace KijhoTechnologies\PdfBundle\Tests\Util;
+namespace Frcho\PdfBundle\Tests\Util;
 
-use KijhoTechnologies\PdfBundle\Util\BuzzRequestHandler;
+use Frcho\PdfBundle\Util\BuzzRequestHandler;
 
 class RequestHandlerTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace kijhoTechnologies\PdfBundle\DependencyInjection;
+namespace frcho\PdfBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -14,7 +14,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class kijhoTechnologiesPdfExtension extends Extension
+class frchoPdfExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -27,22 +27,22 @@ class kijhoTechnologiesPdfExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
 
-        $container->setParameter('kijhoTechnologies_pdf.basepath', $config['basepath']);
-        $container->setParameter('kijhoTechnologies_pdf.binary', $config['binary']);
-        $container->setPArameter('kijhoTechnologies_pdf.options', $config['options']);
+        $container->setParameter('frcho_pdf.basepath', $config['basepath']);
+        $container->setParameter('frcho_pdf.binary', $config['binary']);
+        $container->setPArameter('frcho_pdf.options', $config['options']);
 
-        $jsConverter = 'kijhoTechnologies.pdf.js_to_html';
+        $jsConverter = 'frcho.pdf.js_to_html';
 
         if ($config['inline']) {
-            $cssConverter = 'kijhoTechnologies.pdf.css_to_html';
+            $cssConverter = 'frcho.pdf.css_to_html';
         } else {
-            $cssConverter = 'kijhoTechnologies.pdf.css_path_to_url';
+            $cssConverter = 'frcho.pdf.css_path_to_url';
         }
 
         $container->setDefinition(
-            'kijhoTechnologies.pdf.generator',
+            'frcho.pdf.generator',
             new Definition(
-                'kijhoTechnologies\PdfBundle\Generator\PdfGenerator',
+                'frcho\PdfBundle\Generator\PdfGenerator',
                 array(
                     new Reference($cssConverter),
                     new Reference($jsConverter),

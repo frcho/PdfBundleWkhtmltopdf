@@ -7,7 +7,7 @@
  * @link        http://siphoc.com
  */
 
-namespace kijhoTechnologies\PdfBundle\Converter;
+namespace Frcho\PdfBundle\Converter;
 
 /**
  * Convert the relative CSS links to full url paths for all our CSS files in

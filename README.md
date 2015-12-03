@@ -1,10 +1,10 @@
 # PDFBundle
-The kijho-technologies PDF Bundle provides an easy way to create PDF's from your views based siphoc/PdfBundle
+PDF Bundle provides an easy way to create PDF's from your views based siphoc/PdfBundle
 
 ## Installation
 
 ### Step 1: Download the bundle using Composer
-Add kijhoTechnologiesPdfBundle to composer.
+Add frchoPdfBundle to composer.
 
     {
         "require": {
@@ -14,7 +14,7 @@ Add kijhoTechnologiesPdfBundle to composer.
 
 Install the bundle:
 
-    $ composer.phar update kijho-technologies/pdf-bundle
+    $ composer.phar update frcho/pdf-bundle
 
 Composer will install the bundle with the required dependencies.
 
@@ -28,7 +28,7 @@ In your AppKernel add the following:
     {
         $bundles = array(
             // ...
-            new KijhoTechnologies\PdfBundle\SiphocPdfBundle(),
+            new frcho\PdfBundle\SiphocPdfBundle(),
         );
     }
 

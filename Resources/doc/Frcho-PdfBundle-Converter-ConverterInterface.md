@@ -1,4 +1,4 @@
-KijhoTechnologies\PdfBundle\Converter\ConverterInterface
+Frcho\PdfBundle\Converter\ConverterInterface
 ===============
 
 The interface for our converters.
@@ -8,7 +8,7 @@ converter.</p>
 
 
 * Interface name: ConverterInterface
-* Namespace: KijhoTechnologies\PdfBundle\Converter
+* Namespace: Frcho\PdfBundle\Converter
 * This is an **interface**
 
 
@@ -23,7 +23,7 @@ Methods
 ### convertToString
 
 ```
-string KijhoTechnologies\PdfBundle\Converter\ConverterInterface::convertToString(string $html)
+string Frcho\PdfBundle\Converter\ConverterInterface::convertToString(string $html)
 ```
 
 Convert a specified HTML string with proper implementation logic.

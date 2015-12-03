@@ -1,8 +1,8 @@
 <?php
 
-namespace KijhoTechnologies\PdfBundle\Tests\Converter;
+namespace Frcho\PdfBundle\Tests\Converter;
 
-use KijhoTechnologies\PdfBundle\Converter\JSToHTML;
+use Frcho\PdfBundle\Converter\JSToHTML;
 
 class JSToHTMLTest extends \PHPUnit_Framework_TestCase
 {
@@ -91,7 +91,7 @@ class JSToHTMLTest extends \PHPUnit_Framework_TestCase
         $client =  $this->getMock('\Buzz\Client\FileGetContents');
 
         $handler = $this->getMock(
-            'KijhoTechnologies\PdfBundle\Util\BuzzRequestHandler',
+            'Frcho\PdfBundle\Util\BuzzRequestHandler',
             array('getContent'), array($request, $response, $client)
         );
 

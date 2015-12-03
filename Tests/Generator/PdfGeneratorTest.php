@@ -1,9 +1,9 @@
 <?php
 
-namespace KijhoTechnologies\PdfBundle\Tests\Generator;
+namespace Frcho\PdfBundle\Tests\Generator;
 
 use Symfony\Component\Templating\PhpEngine;
-use KijhoTechnologies\PdfBundle\Generator\PdfGenerator;
+use Frcho\PdfBundle\Generator\PdfGenerator;
 
 class PDFGeneratorTest extends \PHPUnit_Framework_TestCase
 {
@@ -153,7 +153,7 @@ class PDFGeneratorTest extends \PHPUnit_Framework_TestCase
 
     private function getJSToHTMLMock()
     {
-        $converter = $this->getMockBuilder('KijhoTechnologies\PdfBundle\Converter\JSToHTML')
+        $converter = $this->getMockBuilder('Frcho\PdfBundle\Converter\JSToHTML')
             ->disableOriginalConstructor()->getMock();
 
         $converter->expects($this->any())
@@ -165,7 +165,7 @@ class PDFGeneratorTest extends \PHPUnit_Framework_TestCase
 
     private function getCssToInlineMock()
     {
-        $converter = $this->getMockBuilder('KijhoTechnologies\PdfBundle\Converter\CssToHTML')
+        $converter = $this->getMockBuilder('Frcho\PdfBundle\Converter\CssToHTML')
             ->disableOriginalConstructor()->getMock();
 
         $converter->expects($this->any())

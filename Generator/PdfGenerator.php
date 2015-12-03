@@ -1,16 +1,16 @@
 <?php
 /**
- * KijhoTechnologies
+ * Frcho
  *
  * @author      Jelmer Snoeck <jelmer@siphoc.com>
- * @copyright   2013 KijhoTechnologies
+ * @copyright   2013 Frcho
  * @link        http://siphoc.com
  */
 
-namespace kijhoTechnologies\PdfBundle\Generator;
+namespace Frcho\PdfBundle\Generator;
 
 use Knp\Snappy\GeneratorInterface;
-use KijhoTechnologies\PdfBundle\Converter\ConverterInterface;
+use Frcho\PdfBundle\Converter\ConverterInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Log\LoggerInterface;
 use Symfony\Component\Templating\EngineInterface;
@@ -27,7 +27,7 @@ class PdfGenerator implements GeneratorInterface
      *
      * @var string
      */
-    protected $filename = 'siphoc_pdfbundle.pdf';
+    protected $filename = 'pdfbundle.pdf';
 
     /**
      * The CssToHTML Converter.

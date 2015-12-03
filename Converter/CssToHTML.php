@@ -7,9 +7,9 @@
  * @link        http://siphoc.com
  */
 
-namespace kijhoTechnologies\PdfBundle\Converter;
+namespace Frcho\PdfBundle\Converter;
 
-use kijhoTechnologies\PdfBundle\Util\RequestHandlerInterface;
+use Frcho\PdfBundle\Util\RequestHandlerInterface;
 
 /**
  * Convert a view to a proper inline CSS html page.

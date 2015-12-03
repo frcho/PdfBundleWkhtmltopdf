@@ -1,7 +1,7 @@
 {
     "name": "frcho/pdf-bundle",
     "type": "symfony-bundle",
-    "description": "kijho-technologies PDF Bundle for Symfony2",
+    "description": "PDF Bundle for Symfony2",
     "keywords": ["PDF"],
     "license": "MIT",
     "authors": [

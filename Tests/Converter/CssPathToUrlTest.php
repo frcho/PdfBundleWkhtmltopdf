@@ -1,8 +1,8 @@
 <?php
 
-namespace KijhoTechnologies\PdfBundle\Tests\Converter;
+namespace Frcho\PdfBundle\Tests\Converter;
 
-use KijhoTechnologies\PdfBundle\Converter\CssPathToUrl;
+use Frcho\PdfBundle\Converter\CssPathToUrl;
 
 class CssPathToUrlTest extends \PHPUnit_Framework_TestCase
 {

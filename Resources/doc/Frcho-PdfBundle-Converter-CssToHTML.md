@@ -1,4 +1,4 @@
-KijhoTechnologies\PdfBundle\Converter\CssToHTML
+Frcho\PdfBundle\Converter\CssToHTML
 ===============
 
 Convert a view to a proper inline CSS html page.
@@ -7,8 +7,8 @@ Convert a view to a proper inline CSS html page.
 
 
 * Class name: CssToHTML
-* Namespace: KijhoTechnologies\PdfBundle\Converter
-* Parent class: [KijhoTechnologies\PdfBundle\Converter\CssConverter](KijhoTechnologies-PdfBundle-Converter-CssConverter.md)
+* Namespace: Frcho\PdfBundle\Converter
+* Parent class: [Frcho\PdfBundle\Converter\CssConverter](Frcho-PdfBundle-Converter-CssConverter.md)
 
 
 
@@ -34,7 +34,7 @@ The basepath for our css files.
 ### $requestHandler
 
 ```
-protected \KijhoTechnologies\PdfBundle\Util\RequestHandlerInterface $requestHandler
+protected \Frcho\PdfBundle\Util\RequestHandlerInterface $requestHandler
 ```
 
 The request handler we'll be using to call external domains.
@@ -51,7 +51,7 @@ Methods
 ### __construct
 
 ```
-mixed KijhoTechnologies\PdfBundle\Converter\CssToHTML::__construct(\KijhoTechnologies\PdfBundle\Util\RequestHandlerInterface $requestHandler)
+mixed Frcho\PdfBundle\Converter\CssToHTML::__construct(\Frcho\PdfBundle\Util\RequestHandlerInterface $requestHandler)
 ```
 
 Initiate the CssToHTML converter for Symfony2.
@@ -62,14 +62,14 @@ Initiate the CssToHTML converter for Symfony2.
 
 #### Arguments
 
-* $requestHandler **[KijhoTechnologies\PdfBundle\Util\RequestHandlerInterface](KijhoTechnologies-PdfBundle-Util-RequestHandlerInterface.md)**
+* $requestHandler **[Frcho\PdfBundle\Util\RequestHandlerInterface](Frcho-PdfBundle-Util-RequestHandlerInterface.md)**
 
 
 
 ### convertToString
 
 ```
-string KijhoTechnologies\PdfBundle\Converter\CssToHTML::convertToString(string $html)
+string Frcho\PdfBundle\Converter\CssToHTML::convertToString(string $html)
 ```
 
 Convert a specified HTML string with CSS data to a HTML string with
@@ -88,7 +88,7 @@ inline CSS data in proper <style> blocks.
 ### createStylesheetPaths
 
 ```
-array KijhoTechnologies\PdfBundle\Converter\CssToHTML::createStylesheetPaths(array $stylesheets)
+array Frcho\PdfBundle\Converter\CssToHTML::createStylesheetPaths(array $stylesheets)
 ```
 
 Check if a stylesheet is a local stylesheet or an external stylesheet.
@@ -108,7 +108,7 @@ properly fetch the data to insert.</p>
 ### getBasePath
 
 ```
-string KijhoTechnologies\PdfBundle\Converter\CssToHTML::getBasePath()
+string Frcho\PdfBundle\Converter\CssToHTML::getBasePath()
 ```
 
 Retrieve the BasePath used for this inline action.
@@ -122,7 +122,7 @@ Retrieve the BasePath used for this inline action.
 ### getStylesheetContent
 
 ```
-string KijhoTechnologies\PdfBundle\Converter\CssToHTML::getStylesheetContent(string $path)
+string Frcho\PdfBundle\Converter\CssToHTML::getStylesheetContent(string $path)
 ```
 
 Retrieve the contents from a CSS file.
@@ -140,7 +140,7 @@ Retrieve the contents from a CSS file.
 ### replaceLocalUrlTags
 
 ```
-string KijhoTechnologies\PdfBundle\Converter\CssToHTML::replaceLocalUrlTags(string $css)
+string Frcho\PdfBundle\Converter\CssToHTML::replaceLocalUrlTags(string $css)
 ```
 
 From a given CSS string, replace all the local url tags.
@@ -159,7 +159,7 @@ replacing all the url(x) tags.</p>
 ### replaceExternalCss
 
 ```
-string KijhoTechnologies\PdfBundle\Converter\CssToHTML::replaceExternalCss(string $html, array $stylesheets)
+string Frcho\PdfBundle\Converter\CssToHTML::replaceExternalCss(string $html, array $stylesheets)
 ```
 
 From a set of external stylesheets, retrieve the data and replace the
@@ -179,7 +179,7 @@ matching CSS tag with the contents.
 ### getRequestHandler
 
 ```
-\KijhoTechnologies\PdfBundle\Util\RequestHandlerInterface KijhoTechnologies\PdfBundle\Converter\CssToHTML::getRequestHandler()
+\Frcho\PdfBundle\Util\RequestHandlerInterface Frcho\PdfBundle\Converter\CssToHTML::getRequestHandler()
 ```
 
 Retrieve the request handler.
@@ -193,7 +193,7 @@ Retrieve the request handler.
 ### setBasePath
 
 ```
-\KijhoTechnologies\PdfBundle\Converter\CssToHTML KijhoTechnologies\PdfBundle\Converter\CssToHTML::setBasePath(string $basePath)
+\Frcho\PdfBundle\Converter\CssToHTML Frcho\PdfBundle\Converter\CssToHTML::setBasePath(string $basePath)
 ```
 
 Set the base path we'll use to fetch our css files from.
@@ -211,7 +211,7 @@ Set the base path we'll use to fetch our css files from.
 ### extractExternalStylesheets
 
 ```
-array KijhoTechnologies\PdfBundle\Converter\CssConverter::extractExternalStylesheets(string $html)
+array Frcho\PdfBundle\Converter\CssConverter::extractExternalStylesheets(string $html)
 ```
 
 Extract the external stylesheets from the specified HTML if the option is
@@ -221,7 +221,7 @@ enabled.
 basePath.</p>
 
 * Visibility: **public**
-* This method is defined by [KijhoTechnologies\PdfBundle\Converter\CssConverter](KijhoTechnologies-PdfBundle-Converter-CssConverter.md)
+* This method is defined by [Frcho\PdfBundle\Converter\CssConverter](Frcho-PdfBundle-Converter-CssConverter.md)
 
 #### Arguments
 
@@ -232,7 +232,7 @@ basePath.</p>
 ### getExternalStylesheetRegex
 
 ```
-string KijhoTechnologies\PdfBundle\Converter\CssConverter::getExternalStylesheetRegex()
+string Frcho\PdfBundle\Converter\CssConverter::getExternalStylesheetRegex()
 ```
 
 The regex that we'll use to extract external stylesheets.
@@ -240,14 +240,14 @@ The regex that we'll use to extract external stylesheets.
 
 
 * Visibility: **protected**
-* This method is defined by [KijhoTechnologies\PdfBundle\Converter\CssConverter](KijhoTechnologies-PdfBundle-Converter-CssConverter.md)
+* This method is defined by [Frcho\PdfBundle\Converter\CssConverter](Frcho-PdfBundle-Converter-CssConverter.md)
 
 
 
 ### isExternalStylesheet
 
 ```
-boolean KijhoTechnologies\PdfBundle\Converter\CssConverter::isExternalStylesheet(string $url)
+boolean Frcho\PdfBundle\Converter\CssConverter::isExternalStylesheet(string $url)
 ```
 
 Check if the given string is a string for a local stylesheet or an
@@ -256,7 +256,7 @@ external stylesheet.
 
 
 * Visibility: **protected**
-* This method is defined by [KijhoTechnologies\PdfBundle\Converter\CssConverter](KijhoTechnologies-PdfBundle-Converter-CssConverter.md)
+* This method is defined by [Frcho\PdfBundle\Converter\CssConverter](Frcho-PdfBundle-Converter-CssConverter.md)
 
 #### Arguments
 

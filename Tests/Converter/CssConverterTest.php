@@ -1,8 +1,8 @@
 <?php
 
-namespace KijhoTechnologies\PdfBundle\Tests\Converter;
+namespace Frcho\PdfBundle\Tests\Converter;
 
-use KijhoTechnologies\PdfBundle\Converter\CssConverter;
+use Frcho\PdfBundle\Converter\CssConverter;
 
 class CssConverterTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,17 +1,17 @@
 <?php
 /**
- * KijhoTechnologies
+ * Frcho
  *
  * @author      Jelmer Snoeck <jelmer@siphoc.com>
- * @copyright   2013 KijhoTechnologies
+ * @copyright   2013 Frcho
  * @link        http://siphoc.com
  */
 
-namespace KijhoTechnologies\PdfBundle\Util;
+namespace Frcho\PdfBundle\Util;
 
 use Buzz\Client\ClientInterface;
 use Buzz\Message\MessageInterface;
-use KijhoTechnologies\PdfBundle\Util\RequestHandlerInterface;
+use Frcho\PdfBundle\Util\RequestHandlerInterface;
 
 /**
  * The handler that we'll use to get external files from other servers.
