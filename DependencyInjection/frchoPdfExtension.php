@@ -42,7 +42,7 @@ class frchoPdfExtension extends Extension
         $container->setDefinition(
             'frcho.pdf.generator',
             new Definition(
-                'frcho\PdfBundle\Generator\PdfGenerator',
+                'Frcho\PdfBundle\Generator\PdfGenerator',
                 array(
                     new Reference($cssConverter),
                     new Reference($jsConverter),

@@ -49,7 +49,7 @@ In your config.yml file:
 ### Download
 In your controller, you can download the contents of your controller like this:
 
-    $pdfGenerator = $this->get('siphoc.pdf.generator');
+    $pdfGenerator = $this->get('frcho.pdf.generator');
     $pdfGenerator->setName('my_pdf.pdf');
     return $pdfGenerator->downloadFromView(
         'AcmeDemoBundle:Demo:index.html.twig', array(
@@ -61,7 +61,7 @@ In your controller, you can download the contents of your controller like this:
 There's also an option to display the contents in the browser. To do so, use the
 following example:
 
-    $pdfGenerator = $this->get('KijhoTechnologies.pdf.generator');
+    $pdfGenerator = $this->get('frcho.pdf.generator');
     $pdfGenerator->setName('my_pdf.pdf');
     return $pdfGenerator->displayForView(
         'AcmeDemoBundle:Demo:index.html.twig', array(
