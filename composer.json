@@ -23,7 +23,7 @@
         "phpunit/phpunit": "3.7.*"
     },
     "autoload": {
-        "psr-0": { "frcho\\PdfBundle": "" }
+        "psr-0": { "Frcho\\PdfBundle": "" }
     },
-    "target-dir": "frcho/PdfBundle"
+    "target-dir": "Frcho/PdfBundle"
 }
