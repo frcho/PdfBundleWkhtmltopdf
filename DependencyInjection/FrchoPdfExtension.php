@@ -1,6 +1,6 @@
 <?php
 
-namespace frcho\PdfBundle\DependencyInjection;
+namespace Frcho\PdfBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -14,7 +14,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class frchoPdfExtension extends Extension
+class FrchoPdfExtension extends Extension
 {
     /**
      * {@inheritDoc}
