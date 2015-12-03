@@ -1,6 +1,6 @@
 <?php
 
-namespace FrchoPdfBundle\PdfBundle;
+namespace Frcho\PdfBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
