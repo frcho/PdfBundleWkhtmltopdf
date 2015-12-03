@@ -1,9 +1,9 @@
 <?php
 
-namespace kijhoTechnologies\PdfBundle;
+namespace FrchoPdfBundle\PdfBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class kijhoTechnologiesPdfBundle extends Bundle
+class FrchoPdfBundle extends Bundle
 {
 }
