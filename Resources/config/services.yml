@@ -19,11 +19,11 @@ services:
 
     frcho.buzz_request_handler:
         class: Frcho\PdfBundle\Util\BuzzRequestHandler
-        arguments: [ @buzz.request, @buzz.response, @buzz.client ]
+        arguments: [ '@buzz.request', '@buzz.response', '@buzz.client' ]
 
     frcho.pdf.css_to_html:
         class: Frcho\PdfBundle\Converter\CssToHTML
-        arguments: [ @frcho.buzz_request_handler ]
+        arguments: [ '@frcho.buzz_request_handler' ]
         calls:
             - [ setBasePath, [ %frcho_pdf.basepath% ] ]
 
@@ -32,6 +32,6 @@ services:
 
     frcho.pdf.js_to_html:
         class: Frcho\PdfBundle\Converter\JSToHTML
-        arguments: [ @frcho.buzz_request_handler ]
+        arguments: [ '@frcho.buzz_request_handler' ]
         calls:
             - [ setBasePath, [ %frcho_pdf.basepath% ] ]
