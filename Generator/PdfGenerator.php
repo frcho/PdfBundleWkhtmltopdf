@@ -12,7 +12,7 @@ namespace Frcho\PdfBundle\Generator;
 use Knp\Snappy\GeneratorInterface;
 use Frcho\PdfBundle\Converter\ConverterInterface;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpKernel\Log\LoggerInterface;
+use Psr\Log\LoggerInterface;
 use Symfony\Component\Templating\EngineInterface;
 
 /**
