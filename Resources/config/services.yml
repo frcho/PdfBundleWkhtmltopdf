@@ -25,7 +25,7 @@ services:
         class: Frcho\PdfBundle\Converter\CssToHTML
         arguments: [ '@frcho.buzz_request_handler' ]
         calls:
-            - [ setBasePath, [ %frcho_pdf.basepath% ] ]
+            - [ setBasePath, [ "%frcho_pdf.basepath%" ] ]
 
     frcho.pdf.css_path_to_url:
         class: Frcho\PdfBundle\Converter\CssPathToUrl
@@ -34,4 +34,4 @@ services:
         class: Frcho\PdfBundle\Converter\JSToHTML
         arguments: [ '@frcho.buzz_request_handler' ]
         calls:
-            - [ setBasePath, [ %frcho_pdf.basepath% ] ]
+            - [ setBasePath, [ "%frcho_pdf.basepath%" ] ]
