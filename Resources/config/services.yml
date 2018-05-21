@@ -15,7 +15,7 @@ services:
 
     knp.snappy.pdf:
         class: Knp\Snappy\Pdf
-        arguments: [ %frcho_pdf.binary%, %frcho_pdf.options% ]
+        arguments: [ "%frcho_pdf.binary%", "%frcho_pdf.options%" ]
 
     frcho.buzz_request_handler:
         class: Frcho\PdfBundle\Util\BuzzRequestHandler
